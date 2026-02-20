@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leftover Chef | Zero-Waste Gourmet</title>
+    <meta name="description"
+        content="Synthesize disparate food items into a cohesive, gourmet-structured recipe with Leftover Chef.">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1 class="logo">Leftover <span class="accent">Chef</span></h1>
+            <p class="subtitle">Enter 3 random ingredients. Experience culinary alchemy.</p>
+        </header>
+
+        <section class="pantry-section">
+
+            <div class="ingredient-inputs">
+                <div class="input-group">
+                    <label for="ing-1">Ingredient 1</label>
+                    <input type="text" id="ing-1" placeholder="e.g. Eggs" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <label for="ing-2">Ingredient 2</label>
+                    <input type="text" id="ing-2" placeholder="e.g. Spinach" autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <label for="ing-3">Ingredient 3</label>
+                    <input type="text" id="ing-3" placeholder="e.g. Bread" autocomplete="off">
+                </div>
+            </div>
+
+            <button id="generate-btn" class="primary-btn">
+                <span class="btn-text">Synthesize Recipe</span>
+                <span class="loader"></span>
+            </button>
+        </section>
+
+        <section id="recipe-output" class="recipe-container hidden">
+            <!-- Output populated by JS -->
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
